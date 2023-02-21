@@ -8,14 +8,14 @@
 
 <?php
     // Reading a file
-/*     echo("I am playing with files. "); 
+    echo("I am playing with files. "); 
     $ptr = fopen('hello.txt', 'r'); 
     $content = fread($ptr, filesize('hello.txt')); 
     echo $content; 
-    fclose($ptr);  */
+    fclose($ptr); 
 
     // Writing a file
-/*     $ptr = fopen('hello.txt', 'a+'); 
+    $ptr = fopen('hello.txt', 'a+'); 
     $txt = "\nI have to make hurry."; 
     fwrite($ptr, $txt); 
     fclose($ptr); 
@@ -24,27 +24,27 @@
     $ptr = fopen('hello.txt', 'r'); 
     $content = fread($ptr, filesize('hello.txt')); 
     fclose($ptr); 
-    echo $content;  */
+    echo $content; 
 
     // Reading a line of the file
-/*     $ptr = fopen('hello.txt', 'r'); 
-    echo (fgets($ptr));  */
+    $ptr = fopen('hello.txt', 'r'); 
+    echo (fgets($ptr)); 
 
     // Reading a file line by line
-/*     $ptr = fopen('hello.txt',"r"); 
+    $ptr = fopen('hello.txt',"r"); 
     while($content = fgets($ptr)){
         echo $content; 
     }
     fclose($ptr); 
- */
+
     // Reading a file character by character
-    /* $ptr = fopen('hello.txt', 'r'); 
+    $ptr = fopen('hello.txt', 'r'); 
     while($content = fgetc($ptr)){
         if($content == ',')
             break; 
         echo $content, '\n'; 
     }
     echo "We are out of while loop. "; 
-    fclose($ptr);  */
-    
+    fclose($ptr); 
+
 ?>
